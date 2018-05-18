@@ -1,0 +1,313 @@
+/* Write your CSS */
+.sidePanel{
+	height: 100%;
+    background-color: #fff;
+}
+
+.sidePanel .default{
+    height: 100%;
+    padding: 0 5px 0 5px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.sidePanel .popup{
+    background-color: #fff;
+    height: 100%;
+    box-shadow: 0 1px 2px 2px rgba(0,0,0,.2);
+    padding: 0 5px 0 5px;
+    box-sizing: border-box;
+}
+
+.sidePanel .panel-view{
+    box-sizing: border-box;
+    height: calc(100% - 10px);
+}
+
+.sidePanel .side-carousel-control-container{
+    position: absolute;
+    height: 35px;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    right: 0px;
+}
+
+.sidePanel .popup .popup-close-holder{
+    position: relative;
+    width: 100%;
+    height: 20px;
+}
+
+.sidePanel .popup .popup-close-holder .popup-close-icon{
+    font-size: 15px;
+    color: #929497;
+    cursor: pointer;
+    width: 20px;
+    float: right;
+    text-align: center;
+    z-index: 99;
+    position: relative;
+    right: -3px;
+}
+
+.sidePanel .default .popup-close-holder .popup-close-icon{
+    display: none;
+}
+
+.sidePanel .popup .panel-data-holder{
+    box-sizing: border-box;
+    padding: 0px 5px 10px 17px;
+} 
+.img-container{
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    
+}
+
+.img-container img{
+    margin: 0 auto;
+    width: 100%;
+}
+
+/*.sidePanel .audioButtonContainer{
+    height: 60px;
+    width: 100%;
+    padding: 18px 0px;
+    position: relative;
+    
+}*/
+
+.sidePanel .content-container {
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 99%;
+    height: calc(100% - 60px);
+}
+
+
+.sidePanel .side-carousel-indicators {
+    left: 0;
+    position: relative;
+    width: 50px;
+    display: inline-block;
+    height: 35px;
+    margin: 0 auto;
+    top: -9px;
+     z-index: 15;
+    padding-left: 0;
+    text-align: center;
+    list-style: none;
+    cursor: pointer;
+}
+
+.sidePanel .side-carousel-control-container>a {
+    display: inline-block;
+    font-size: 36px;
+    text-shadow: none;
+    opacity: 1;
+    width: 25px;
+    position: relative;
+    margin: 0px auto;
+    line-height: 35px;
+    height: 35px;
+    color: #426ab2;
+    background: transparent;
+    cursor: pointer;
+}
+
+.sidePanel .side-carousel-control-container>a span.fa {
+    top: -4px;
+    position: relative;
+}
+
+.sidePanel .side-carousel-control-container>a span:hover, .side-carousel-control-container>a:focus {
+    color: #426ab2;
+}
+
+.sidePanel .side-carousel-indicators li{
+    width: 25px;
+    height: 35px;
+    position: relative;
+    border: none;
+    display: inline;
+    margin: 4px;
+    color: #426ab2;
+    /*text-indent: 0px;*/
+}
+
+.sidePanel .side-carousel-indicators li>i {
+    display: inline;
+}
+
+.sidePanel .side-carousel-indicators li>i:before {
+    content: "\f10c";
+}
+
+.sidePanel .side-carousel-indicators .active {
+    background-color: transparent;
+    width: auto;
+    height: auto;
+}
+
+.sidePanel .side-carousel-indicators .active i:before {
+    content: "\f111";
+}
+
+.sidePanel .side-carousel-indicators li:hover i:before {
+    content: "\f111";
+}
+
+.sidePanel.hide-panel{
+    display: none;
+}
+.sidePanel .elem-hide{
+    display: none;
+}
+.sidePanel .elem-hidden{
+    visibility: hidden;
+}
+
+.sidePanel #sidepanel_heading {
+    float: left;
+    position: relative;
+    padding-right: 10px;
+    font-weight: bold;
+}
+
+@media screen and (orientation:portrait){
+    .sidePanel{
+        position: relative;
+        width: 650px;
+    }
+    
+    .sidePanel .popup{
+        height: 100%;
+        margin: 0px 5px;
+    }
+    .sidePanel .default{
+        padding: 0 22px 0 22px;
+    }
+    
+    .img-container{
+        display: inline-block;
+        position: relative;
+        width: 316px;
+        height: 221px;
+        float: left;
+        margin: auto 0;
+    }
+    
+    .img-container img{
+        margin: auto;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        bottom: 0px;
+        position: absolute;
+        left: 0px;
+        right: 0px;
+    }
+    
+    .panel-data-holder{
+        width: 324px;
+        height: 248px;
+        margin-top: 0;
+        padding-top: 0;
+        float: right;
+        top: 52px;
+    }
+    
+    .sidePanel .default .img-container{
+        height: 246px;
+    }
+    
+    /*.sidePanel .panel-data-holder .audioButtonContainer{
+        padding: 18px 0px;
+    }*/
+    
+    .sidePanel .panel-data-holder .content-container{
+        position: relative;
+        height: calc(100% - 40px);
+    }
+    
+    .sidePanel .popup .panel-data-holder{
+        width: 312px;
+        height: 234px;
+        padding: 0px 5px 5px 10px;
+    }
+    
+    .sidePanel .popup .popup-close-holder .popup-close-icon{
+        top: 2px;
+    }
+    
+}
+@media screen and (max-width: 896px){
+    .sidePanel{
+        position: relative;
+        width: 650px;
+    }
+    
+    .sidePanel .popup{
+        height: 100%;
+        margin: 0px 5px;
+    }
+    .sidePanel .default{
+        padding: 0 22px 0 22px;
+    }
+    
+    .img-container{
+        display: inline-block;
+        position: relative;
+        width: 316px;
+        height: 221px;
+        float: left;
+        margin: auto 0;
+    }
+    
+    .img-container img{
+        margin: auto;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        bottom: 0px;
+        position: absolute;
+        left: 0px;
+        right: 0px;
+    }
+    
+    .panel-data-holder{
+        width: 324px;
+        height: 248px;
+        margin-top: 0;
+        padding-top: 0;
+        float: right;
+        top: 52px;
+    }
+    
+    .sidePanel .default .img-container{
+        height: 246px;
+    }
+    
+    /*.sidePanel .panel-data-holder .audioButtonContainer{
+        padding: 18px 0px;
+    }
+    */
+    .sidePanel .panel-data-holder .content-container{
+        position: relative;
+        height: calc(100% - 40px);
+    }
+    
+    .sidePanel .popup .panel-data-holder{
+        width: 312px;
+        height: 234px;
+        padding: 0px 5px 5px 10px;
+    }
+    
+    .sidePanel .popup .popup-close-holder .popup-close-icon{
+        top: 2px;
+    }
+    
+}

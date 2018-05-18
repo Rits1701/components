@@ -1,0 +1,16 @@
+<div class="videoPlayer">
+    <div class="videoContainer">
+        <video width="100%" controls>
+            <source src="{{source}}" type="video/mp4">
+            <source src="{{source}}" type="video/ogg">
+        </video>
+    </div>
+    <div class="buttonContainer" ng-show="false"> 
+        <div id="video_playbutton" ng-if="!playingState" ng-click="playVideo()">
+            <i class="fa fa-youtube-play custom" aria-hidden="true"></i>
+        </div>
+        <div id="video_pausebutton" ng-click="pauseVideo()" ng-if="playingState">
+            <i class="fa fa-pause custom" aria-hidden="true"></i>
+        </div>        
+    </div>
+</div>

@@ -1,0 +1,50 @@
+<div class="notebook-container">
+	<div class="nbDummy" role="document" aria-label=""></div>
+	<div class="close-notebook">
+		<span class="icon-closenote " ng-click="closeNoteBook()" title="Close"></span>
+	</div>
+	<div class="notebook-carousel-container">
+		<div id="notebookCarousel" class="carousel slide" data-ride="carousel" data-interval="false" data-keyboard="false">
+			<div class="notebook-carousel-control">
+				<a class="left" data-target="#notebookCarousel" data-slide="prev" title="Previous" ng-click="disableNavigation()" ng-style="{'visibility' : showLeftArrow === true ? 'visible' : 'hidden', 'pointer-events' : activeLeftArrow === true?'all' : 'none'}">
+					<span class="icon-back-one"></span>
+				</a>
+				<div class="carousel-page" aria-hidden="true">
+					<span>Pages </span> &nbsp;
+					<span ng-bind="notebookPageIndex"></span>/<span>{{notebookData.length}}</span>
+				</div>
+				<a class="right" data-target="#notebookCarousel" data-slide="next" title="Next" ng-click="disableNavigation()" ng-style="{'visibility' : showRightArrow === true ? 'visible' : 'hidden', 'pointer-events' : activeRightArrow === true?'all' : 'none'}">
+					<span class="icon-next-one"></span>
+				</a>
+			</div>
+
+			<div editor-container>
+				<div class="carousel-inner" role="listbox" data-interval="false">
+					<div class="item" ng-repeat="notebook in notebookData track by $index" ng-class="notebook.active==true?'active':''" data-active-index="{{$index}}">
+						<div class="notebook-header-container">
+							<span ng-class="notebook.pageSubtitle ? 'notebook-header-text-sub' : 'notebook-header-text'">{{notebook | pageTitle}}</span>
+							<span class="notebook-subheader-text" ng-if="notebook.pageSubtitle">{{notebook.pageSubtitle}}</span>
+						</div>
+						<hr aria-hidden="true" class="line-divider"></hr>
+						<div class="notebook-page-container" ng-class="showBottomLine==true?'border-bottom':''">
+							<div ng-include src="notebook.template"></div>
+						</div>
+					</div>
+				</div>
+				<div editortools></div>
+			</div>
+
+			<div class="action-icons">
+				<div class="tool-bar" ng-class="delete==false?'disabled':''">
+					<span class="icon-discard icon-fonts" ng-class="delete==false?'disabled':''" ng-click="delete && deletePage()" title="Delete"></span>
+				</div>
+				<div class="tool-bar">
+					<span class="icon-print icon-fonts" ng-click="notebookPrint()" title="Print"></span>
+				</div>
+				<div class="tool-bar">
+					<span class="icon-add icon-fonts" ng-class="add==false?'disabled':''" ng-click="add && addActive && addPage()" title="Add page"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

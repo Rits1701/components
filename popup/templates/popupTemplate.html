@@ -1,0 +1,20 @@
+<!-- <div class="modal fade popupParent" ng-show="popupOn" tabindex="-1"  role = "dialog" aria-hidden = "true"> -->
+<div class="popupParent" ng-show="popupOn">
+	<div class="popupContainer">
+		<div class="popupHeader" ng-hide="hideHeader">
+			<div class="popupAudio" ng-show="(audioPath != '')">
+				<audioplayer-directive source="{{audioPath}}" ></audioplayer-directive>
+			</div>
+			<div class="popupHeading" ng-show="(headerText != '')" ng-bind-html="headerText"></div>
+			<div class="closeButton" ng-click="closePopup()" ng-hide="hideClose">
+				<i class="fa fa-close" aria-hidden="true"></i>
+			</div>
+		</div>
+	    <div class="textContainer" ng-show="type == 'text'" ng-bind-html="textContent"></div>
+	    <div class="imgContainer" ng-show = "type == 'image'">
+	    	<img src="{{imagePath}}" class="popupImg" height="{{imageHeight}}" width="{{imageWidth}}" draggable="false">
+	    </div>
+	    <div class="imageCaption" ng-show="((type == 'image') && (imageCaption != ''))" ng-bind-html="imageCaption" ng-class="{'captionOnly': (dynamicpopuptext == '')}"></div>
+	    <div class="dynamicText" ng-show="((type == 'image') && (dynamicpopuptext != ''))" ng-bind-html="dynamicpopuptext"></div>	    
+	</div>
+</div>

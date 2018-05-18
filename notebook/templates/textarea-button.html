@@ -1,0 +1,86 @@
+<div class="textarea-button-container">
+	<div ng-transclude></div>
+	<!-- Tool Handler Section -->
+	<div class="tool-container">
+		<!-- <div class="fonts-popup" ng-show="bshowPopupFonts">
+			<div class="font-container">
+				<button type="button" class="hugeFont" ng-click="getTextSize('huge')">Huge</button>
+			</div>
+			<div class="font-container">
+				<button type="button" class="largeFont" ng-click="getTextSize('large')">Large</button>
+			</div>
+			<div class="font-container">
+				<button type="button" class="normalFont" ng-click="getTextSize('normal')">Normal</button>
+			</div>
+			<div class="font-container bordernone">
+				<button type="button" class="smallFont" ng-click="getTextSize('small')">Small</button>
+			</div>
+		</div>
+		<div class="tool-bar">
+			<button type="button" ng-click="toggleFontsPopup()" class="icon-size icon-fonts" title="Text size" tabindex={{optionsTabindex.textFont.tabIndex}} aria-label={{optionsTabindex.textFont.ariaLable}} role={{optionsTabindex.textFont.role}}></button>
+		</div> -->
+
+		<div class="dropup tool-bar">
+			<button  type="button" class="icon-size icon-fonts" title="Text size" id="dropdownMenuFonts" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+			<ul class="fonts-popup dropdown-menu" aria-labelledby="dropdownMenuFonts">
+				<li class="font-container"><a href="#" class="hugeFont" ng-click="getTextSize('huge')">Huge</a></li>
+				<li class="font-container"><a href="#" class="largeFont" ng-click="getTextSize('large')">Large</a></li>
+				<li class="font-container"><a href="#" class="normalFont" ng-click="getTextSize('normal')">Normal</a></li>
+				<li class="font-container"><a href="#" class="smallFont" ng-click="getTextSize('small')">Small</a></li>
+			</ul>
+		</div>
+		<div class="divider"></div>
+		<div class="tool-bar">
+			<button  type="button" ng-click="bold()" class="icon-bold icon-fonts" ng-class="activeBold===true?'active':''" title="Bold"></button>
+		</div>
+		<div class="divider"></div>
+		<div class="tool-bar">
+			<button  type="button" ng-click="italic()" class="icon-italic icon-fonts" ng-class="activeItalic===true?'active':''" title="Italic"></button>
+		</div>
+		<div class="divider"></div>
+		<div class="tool-bar">
+			<button aria-hidden="true" type="button" ng-click="underline()" class="icon-underline icon-fonts" ng-class="activeUnderline===true?'active':''" title="Underline"></button>
+		</div>
+		<div class="divider"></div>
+		<div class="tool-bar">
+			<button aria-hidden="true" type="button" ng-click="unOrderedList()" class="icon-bulleted icon-fonts" ng-class="activeList===true?'active':''" title="Bulleted list"></button>
+		</div>
+
+
+		<!-- <div class="tool-container">
+		<ul class="nav nav-pills" role="tablist">
+			<li role="presentation" class="dropup tool-bar">
+				<a href="#" id="drop4" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" disable-enter tabindex={{optionsTabindex.textFont.tabIndex}} aria-label={{optionsTabindex.textFont.ariaLable}} role={{optionsTabindex.textFont.role}}>
+					<i class="icon-size icon-fonts"></i>
+				</a>
+				<ul class="fonts-popup dropdown-menu" aria-labelledby="drop4">
+					<li class="font-container"><a href="#" class="hugeFont" ng-click="getTextSize('huge')">Huge</a></li>
+					<li class="font-container"><a href="#" class="largeFont" ng-click="getTextSize('large')">Large</a></li>
+					<li class="font-container"><a href="#" class="normalFont" ng-click="getTextSize('normal')">Normal</a></li>
+					<li class="font-container"><a href="#" class="smallFont" ng-click="getTextSize('small')">Small</a></li>
+				</ul>
+			</li>
+			<li class="tool-bar" ng-click="bold()" tabindex={{optionsTabindex.bold.tabIndex}} aria-label={{optionsTabindex.bold.ariaLable}} role={{optionsTabindex.bold.role}}>
+				<a href="#">
+					<i class="icon-bold icon-fonts"></i>
+				</a>
+			</li>
+			<li class="tool-bar" ng-click="italic()" tabindex={{optionsTabindex.italic.tabIndex}} aria-label={{optionsTabindex.italic.ariaLable}} role={{optionsTabindex.italic.role}}>
+				<a href="#">
+					<i class="icon-italic icon-fonts"></i>
+				</a>
+			</li>
+			<li class="tool-bar" ng-click="underline()" tabindex={{optionsTabindex.underLine.tabIndex}} aria-label={{optionsTabindex.underLine.ariaLable}} role={{optionsTabindex.underLine.role}}>
+				<a href="#">
+					<i class="icon-underline icon-fonts"></i>
+				</a>
+			</li>
+			<li class="tool-bar" ng-click="unOrderedList()" tabindex={{optionsTabindex.underLine.tabIndex}} aria-label={{optionsTabindex.underLine.ariaLable}} role={{optionsTabindex.underLine.role}}>
+				<a href="#">
+					<i class="icon-bulleted icon-fonts"></i>
+				</a>
+			</li>
+		</ul>
+	</div> -->
+	</div>
+</div>

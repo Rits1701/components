@@ -1,0 +1,40 @@
+<div class="drawingToolContainer">
+	<div class="drawing-tool">
+		<div aria-hidden="true" data-toggle="collapse" data-target="#expandTool" class="tool-box" ng-click="openDrawingToolbarPanel($event)" title="Drawing tool" >
+			<span class="icon-drawtool"></span>
+		</div>
+		<div id="expandTool" class="expandTool collapse">
+			<!--<div class="top-arrow squareBox"></div>-->
+			<div id="pencilTool" data-toggle="collapse" class="tool-box" ng-click="onChangeDrawingMode($event,'pencil')" title="Pencil">
+				<span class="icon-pencil"></span>
+			</div>
+			<div data-toggle="collapse" class="tool-box" ng-click="onChangeDrawingMode($event,'eraser')" title="Eraser">
+				<span class="icon-eraser"></span>
+			</div>
+			<div id="clearAll" data-toggle="collapse" class="tool-box disabled" ng-click="onChangeDrawingMode($event,'clear')" title="Clear all">
+				<span class="icon-clear"></span>
+			</div>
+		</div>
+		<div class="divider"></div>
+		<div aria-hidden="true" class="tool-box" title="Screenshot" >
+			<span class="icon-snapshot" ng-click="onTakeSnap()"></span>
+		</div>
+	</div>
+
+	<div id="pencil-panel" class="pencil-panel">
+		<div class="oval-container">
+			<div class="oval-holder" ng-repeat="i in [1, 2, 3, 4, 5, 6]" ng-click="onSelectPencilColor($event)">
+				<div class="oval oval-{{$index+1}}" ng-class="{0:'selected'}[$index]"></div>
+			</div>
+		</div>
+		<div class="bar-container">
+			<div class="bar-sign minus-sign" ng-click="onChangePencilSize('minus')"><span class="icon-minus"></span></div>
+			<div class="bar-holder" title="Size tool">
+				<input type="range" min="1" max="3" class="bar" ng-model="pencilSize">
+			</div>
+			<div class="bar-sign plus-sign" ng-click="onChangePencilSize('plus')">
+				<span class="icon-plus"></span>
+			</div>
+		</div>
+	</div>
+</div>

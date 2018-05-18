@@ -1,0 +1,34 @@
+/* Write your CSS */
+
+ul.tab-class {
+	list-style: none;
+}
+
+ul.tab-class li {
+	float: left;
+	margin-right:5px;
+	border:1px solid #e1e1e1;
+	padding : 5px;
+	background-color: #ffffff;
+	color: #000000;
+	text-align: center;
+}
+
+ul.tab-class li:hover {
+	cursor : pointer;
+	background-color: #678dce;
+
+}
+
+ul.nav-pills li  {
+    float: left;
+    text-align: center;
+    border: 2px solid #426ab2;
+    color: #426ab2;
+    cursor: pointer;
+    font-family: Heinemann-Reg;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 19px;
+}

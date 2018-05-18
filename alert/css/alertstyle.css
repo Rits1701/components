@@ -1,0 +1,157 @@
+/* Write your CSS */
+
+.alert-bg {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    width: 350px;
+    height: 190px;
+    position: absolute;
+    border: none;
+    font-family: AvenirRoman;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    color: rgba(0,0,0,1);
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    background: #FFFFFF;
+    -webkit-box-shadow: 2px 2px 5px 0 rgba(0,0,0,0.2) ;
+    box-shadow: 2px 2px 5px 0 rgba(0,0,0,0.2) ;
+    margin: auto;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    z-index: 99999;
+    display: block;
+    opacity: 0;
+     -moz-opacity: 0;
+    visibility: hidden;
+
+    -moz-transform: scale(0.4);
+    -webkit-transform: scale(0.4);
+    -o-transform: scale(0.4);
+    -ms-transform: scale(0.4);
+    transform: scale(0.4);
+
+    -webkit-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    -ms-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+    transition: all 200ms ease-in;
+}
+
+.alert-bg.show {
+    visibility: visible;
+    -moz-opacity: 1;
+    opacity: 1;
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+
+.alert-bg .msg-box{
+    position: relative;
+    width: 350px;
+    height: 112px;
+    word-wrap: break-word;
+    padding: 0 20px;
+    text-align: center;
+    top: 45px;
+    display: table-cell;
+    vertical-align: middle;
+    white-space: pre-wrap;
+    line-height: 28px;
+    font-size: 23px;
+}
+
+.alert-bg .msg-box-valign{
+    top: 20px;
+}
+
+.alert-bg .buttonHolder{
+    width: 100%;
+    height: 45px;
+    /*border: 1px solid;*/
+    top: 30px;
+    position: relative;
+    text-align: center;
+}
+
+.alert-bg .buttonHolder .cancel {
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 134px;
+    height: 35px;
+    cursor: pointer;
+    right: 0;
+    left: 0;
+    /*padding-top: 3px;*/
+	padding:2px 0;
+    border: 3px solid #426ab2;
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+    font-family: AvenirHeavy;
+    font-size: 23px;
+    color: #426ab2;
+    text-align: center;
+    background: #FFFFFF;
+    -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
+    box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
+    -webkit-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+    -moz-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+    -o-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+    transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+    margin: 5px;
+}
+.alert-bg .buttonHolder .cancel:hover {
+    border-color: #345796;
+    background-color: #345796;
+    color: #FFFFFF;
+}
+
+
+.alert-bg .buttonHolder .prime-button {
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 135px;
+    height: 35px;
+    cursor: pointer;
+    /*padding: 10px 20px;*/
+    right: 0;
+    left: 0;
+    /*padding-top: 3px;*/
+	padding:2px 0;
+    border: 3px solid #426AB2;
+    font-family: AvenirHeavy;
+    font-size: 23px;
+    color: rgba(255,255,255,1);
+    text-align: center;
+    background: #426AB2;
+    -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.3) ;
+    box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.3) ;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.5) ;
+    -webkit-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+    -moz-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+    -o-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+    transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+    margin: 5px;
+}
+.alert-bg .buttonHolder .prime-button:hover {
+    border-color: #345796;
+    background-color: #345796;
+}
+.alert-bg .buttonHolder .prime-button:disable {
+    border: 3px solid #CCCCCC;
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+    color: #FFFFFF;
+    background: #CCCCCC;
+}

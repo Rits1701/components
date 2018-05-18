@@ -1,0 +1,29 @@
+<div class="hotspotBoard view" ng-cloak>
+	<div class="imageArea">
+		<div class="investigateTabIndex">
+			<div ng-repeat="invObj in inVL01.dropItems.drop track by $index">
+				<div class="investigate-1 hotspot{{$index+1}} investigate-droppable" data-attr="{{invObj.dataAttr}}" data-value="{{invObj.dataValue}}" data-drop="{{invObj.dataDrop}}" ></div>
+			</div>
+		</div>
+
+		<div class="itemContainer">
+			<div ng-repeat="dragObj in inVL01.dragItems.drag track by $index">
+				<div class="item{{$index+1}} item" ng-if="$index == 0">
+					<div id="image{{$index}}" class="img clickBackpack">
+						<img ng-src="{{dragObj.src}}" class="{{dragObj.class}}" height="{{dragObj.h}}" width="{{dragObj.w}}" data-value="{{dragObj.dataValue}}" >
+					</div>
+				</div>
+				<div ng-if="$index == 1" class="item{{$index+1}}">
+					<!-- <p>{{dragObj.desc}}</p> -->
+					<span class='army-chevron'></span>
+				</div>
+				<div class="item{{$index+1}} item toolItems" ng-if="$index !=0 && $index != 1" style="display:none;">
+					<div id="image{{$index}}" class="img">
+						<img ng-src="{{dragObj.src}}" class=" investigate-draggable {{dragObj.class}}" height="{{dragObj.h}}" width="{{dragObj.w}}" data-value="{{dragObj.dataValue}}" >
+					</div>
+				</div>
+				<div class="sep toolItems" ng-if="$index != 0 && $index != 1 && $index  != 5" style="display:none;"></div>
+			</div>
+		</div>
+	</div>
+</div>

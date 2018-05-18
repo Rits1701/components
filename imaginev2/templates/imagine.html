@@ -1,0 +1,81 @@
+<div id="printHolder" class="printHolder_imagine"></div>
+<div class="imaginePage">
+
+	<div id="imagine-print-area">
+		<drawingpad-directives canvasid="5" nav="false"></drawingpad-directives>
+		<div class="canvasContainerLandscape" ng-show="showCanvasContainerLadscape">
+			<canvas class="canvasStyle" id="canvas_landscape_5" height="{{imagine_canvas_height_landscape}}" width="{{imagine_canvas_width_landscape}}"></canvas>
+		</div>
+		<div class="canvasContainerPortrait" ng-show="showCanvasContainerPortrait">
+			<canvas class="canvasStyle" id="canvas_portrait_5" height="{{imagine_canvas_height_portrait}}" width="{{imagine_canvas_width_portrait}}"></canvas>
+		</div>
+	</div>
+	<div class="imagine-left-div" checkDisable="imagine-left-div" ng-style="{'width':imageContainerWidth+'px'}">
+		<div class="dnd-wrapper" ng-style="{'transform': 'scale('+scale+')'}">
+			<div id="imagine_container" class="imagine_container droppable-container">
+			<!--<div class="droppable-container"></div>
+			<div class="droppable-container-1"></div>-->
+
+
+			</div>
+			<div aria-hidden="true" class="drag-container" ng-class="dragDisableClass">
+				<div class="drag-panel">
+					<div ng-repeat="dragItem in dragList" id="{{dragItem.id}}" class="draggable-content draggable-conten">
+						<img src="{{dragItem.imgSrc}}" width="{{dragItem.w}}" height="{{dragItem.h}}" class="draggable imagine-draggable-Item">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="imagine-right-div InstructionNotes" ng-keypress="nNotebookImagine()" ng-style="{'width':rightSectionWidth+'px'}">
+		<div class="InstructionNotesHeader">
+			<div aria-hidden="true" class="what-if-button">
+				<div class="what-if-but">What If?</div>
+			</div>
+			<div class="audioButtonContainer" title="Audio">
+				<audioplayer-directive data="appData.data.view5.audio" source="assets/audios/Imagine.mp3"></audioplayer-directive>
+			</div>
+		</div>
+		<div class="InstructionNotesContent">
+		<div class="InstructionText">
+			<p ng-bind-html="InsText1"></p>
+			<br ng-if="InsText2">
+			<p ng-bind-html="InsText2"></p>
+        </div>
+
+			<div class="editor-container" editor-container ng-if="editor">
+                <div ng-model="imagineeditor" ng-change="imagine_textarea_changed(e,imagineeditor)" strip-br="true" placeholder="{{editor}}" class="editor" contenteditable editor></div>
+                <div class="tool-editor" ng-if="editortool">
+                    <div editortools></div>
+                    <div ng-if="printEditor" class="action-icons">
+                        <div class="tool-bar">
+                            <div role="button" class="print_btn icon-print icon-fonts" ng-click="printScreen()" title="Print"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+		</div>
+	</div>
+
+</div>
+<div class="bottom-panel">
+    <div class="button-box">
+        <div aria-hidden="true" class="imagine-buttons imagine-buttons1" ng-class="{'disabled-imagine-buttons' : stickyCount > 2}" data-ng-click="showStickyNotes($event)">
+            <div class="notes">
+                <span class="icon-add" ng-class="{selected : bSticky}" aria-hidden="true"></span></div><span class="imagine_but_text">Add Note</span>
+        </div>
+        <div class="imagine-buttons imagine-buttons3" ng-click="printScreen()">
+            <div class="print">
+                <span class="icon-print imagine-print"></span>
+            </div>
+            <span class="imagine_but_text">Print</span>
+        </div>
+		<div aria-hidden="true" class="imagine-buttons imagine-buttons2" ng-class="{'disabled-imagine-buttons' : enableReset == false}" ng-click="resetScreen()">
+			<div class="reset"><i class="fa fa-rotate-right imagine-rotate" aria-hidden="true"></i></div>
+			<span class="imagine_but_text">Reset</span>
+		</div>
+    </div>
+</div>

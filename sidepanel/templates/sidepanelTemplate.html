@@ -1,0 +1,46 @@
+<div class="sidePanel slide" ng-class="panelData.intial_state ? '': 'hide-panel'">
+      
+      <div ng-class="panelData.type">
+          <div class="popup-close-holder">
+               <div class="popup-close-icon" ng-click="closeSidePanel()">
+                    <i class="fa fa-close" aria-hidden="true"></i>
+               </div>
+          </div>
+           
+          <div id="{{panelData.panel_id}}_subview_{{$index}}" ng-repeat="pd in panelData.info" class="panel-view" ng-class="(panelData.sub_view != undefined && panelData.sub_view != $index) ? 'elem-hide' : ''">
+               <div class="img-container" ng-if='pd.imgSource !== undefined'>
+                   <img draggable="false" id="{{panelData.panel_id}}_img_{{$index}}" ng-src="{{pd.imgSource}}" class="image-holder"/>
+               </div>
+
+               <div class="panel-data-holder" id="{{panelData.panel_id}}_txt_{{$index}}">                  
+                  <div class="audioButtonContainer discover-popup-audio" ng-if='pd.audioSource !== undefined'>
+                      <div id="sidepanel_heading" ng-show="panelData.panelheading">{{panelData.panelheading}}</div>
+                      <audioplayer-directive source="{{pd.audioSource}}" ></audioplayer-directive>
+                  </div>
+
+                  <div class="content-container" ng-bind-html="pd.txt"></div>
+               </div>
+          </div>
+          
+          <div class="side-carousel-control-container" ng-show="panelData.info.length > 1 ? true :false">
+              <a class="left left-arrow" ng-click="showBassFish()">
+						<span class="fa fa-angle-left" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+              </a>
+              <ol class="side-carousel-indicators">
+                  <li class="panel-item" ng-repeat="pd in panelData.info" ng-class="$index == panelData.sub_view ? 'active' : ''" ng-click="onChangeActiveData($event,$index)">
+                      <i class="fa" aria-hidden="true"></i>
+                  </li>
+                  
+              </ol>
+              <a class="right right-arrow" ng-click="showShadFish()">
+					<span class="fa fa-angle-right" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+              </a>
+          </div>
+
+      </div>
+    
+    
+      <div ng-transclude class="externalPopUp"></div>
+</div>

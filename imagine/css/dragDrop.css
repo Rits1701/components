@@ -1,0 +1,325 @@
+.dnd-wrapper {
+
+height: 100%;
+width: 100%;
+float: left;
+position: relative;
+}
+.dnd-wrapper .disableDraggables{
+    pointer-events: none;
+}
+
+.droppable-container {
+    border: 1px solid #ccc;
+    width: 100%;
+    height: calc(100% - 120px);
+
+}
+.dnd-wrapper .dropped-item{
+   cursor: move;
+}
+
+.imagine-footer {
+
+    width: 100%;
+    height: 35px;
+    position: relative;
+}
+
+.imaginePage .imagine-footer .globalbutton-imagine {
+
+	box-sizing: border-box;
+    /*width: 125px;*/
+    height: 35px;
+    cursor: pointer;
+    right: 0;
+    left: 0;
+    /*padding-top: 3px;*/
+    border: 3px solid #426ab2;
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+    font-family: AvenirHeavy;
+    font-size: 20px;
+    color: #426ab2;
+    text-align: center;
+    background: #fff;
+    /*-webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,.2);
+    box-shadow: 2px 2px 2px 0 rgba(0,0,0,.2);*/
+    -webkit-transition: all .3s cubic-bezier(.42,0,.58,1);
+    -moz-transition: all .3s cubic-bezier(.42,0,.58,1);
+    -o-transition: all .3s cubic-bezier(.42,0,.58,1);
+    transition: all .3s cubic-bezier(.42,0,.58,1);
+    margin: 5px;
+	box-shadow: none;
+	text-shadow: none;
+	line-height: 32px;
+}
+.imaginePage .imagine-footer .globalbutton-imagine:hover{
+	border-color: #345796;
+    background-color: #345796;
+    color: #fff;
+}
+
+.imaginePage .imagine-footer .imagine-action-btn {
+    float: right;
+    height: 45px;
+    margin-top: 4px;
+}
+
+.imaginePage .imagine-footer .imagine-action-btn .icondefault {
+    float: left;
+    width: 35px;
+    height: 35px;
+    color: #545352;
+    cursor: pointer;
+    margin-top: 4px;
+}
+
+.imaginePage .imagine-footer .imagine-action-btn .sticky {
+
+	font-size: 25px;
+    padding: 5px;
+    margin-top: 1px;
+}
+
+.imaginePage .imagine-footer .imagine-action-btn .sticky .fa:hover {
+    color: #000000;
+}
+.imaginePage .imagine-footer .imagine-action-btn .sticky .selected {
+    color: #000000;
+}
+
+.imaginePage .imagine-footer .imagine-action-btn .rotate {
+    font-size: 15px;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.imaginePage .imagine-footer .imagine-action-btn .rotate .fa:hover {
+    color: #000000;
+}
+.imaginePage .imagine-footer .imagine-action-btn .rotate .selected {
+    color: #000000;
+}
+
+
+
+.imaginePage .imagine-footer .imagine-action-btn .print span:hover {
+    color: #000000;
+}
+.imaginePage .imagine-footer .imagine-action-btn .print .selected {
+    color: #000000;
+}
+
+.imaginePage .imagine-footer .imagine-action-btn .print .icon-print:before {
+    content: "\e904";
+    font-size: 25px;
+}
+
+.drag-container {
+
+    width: 100%;
+    height: 124px;
+/*    border: 1px solid forestgreen;*/
+    padding: 2px 0;
+    box-sizing: border-box;
+
+
+}
+.drag-container .drag-panel::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+	/*-webkit-appearance: none;*/
+}
+
+.drag-container .drag-panel::-webkit-scrollbar-thumb {
+    background-color:#ccc;
+}
+.drag-container .drag-panel{
+
+    width: 100%;
+    height: 112px;
+    white-space: nowrap;
+    overflow-x: visible;
+    overflow-y: hidden;
+	-webkit-overflow-scrolling: touch;
+}
+
+
+
+.draggable-content {
+
+    height: 102px;
+    display: inline-block;
+    margin-right: 5px;
+    border: 1px solid #CCCCCC;
+}
+
+.draggable-content img {
+    padding: 0;
+}
+
+.dnd-wrapper .droppable-container .sticky-notes-holder {
+    border: 1px solid rgba(0,0,0,0);
+    width: 100%;
+    height: calc(100% - 130px);
+    position: absolute;
+    right: 0;
+    margin: 0;
+    top: 0;
+}
+
+.dnd-wrapper .droppable-container .stickNotes {
+   /* position: absolute;*/
+    width: 183px;
+    height: auto;
+   /* right: 20px;
+    top: 50px;*/
+    font-size: 15px;
+    font-family: "AvenirRoman";
+    overflow-y: auto;
+   /* border: 1px solid #ccc;*/
+    word-wrap: break-word;
+    overflow: hidden;
+    max-height: 320px;
+    min-height: 20px;
+
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    /*padding: 20px 4px 20px 10px;*/
+    overflow: hidden;
+    border: none;
+    font: normal 16px/1 Arial, Helvetica, sans-serif;
+    color: rgba(0,0,0,1);
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    background: #f8f7b6;
+    cursor: text;
+    text-align: left;
+   
+}
+.dnd-wrapper .droppable-container .stickyWrapper{
+    padding: 20px 4px 20px 10px;
+    width: 194px;
+    height: auto;
+    position: absolute;
+    right: 20px;
+    background: #f8f7b6;
+    -webkit-box-shadow: 2px 2px 5px 0 rgba(0,0,0,0.2) ;
+    box-shadow: 2px 2px 5px 0 rgba(0,0,0,0.2) ;
+     cursor: move;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    max-height: 320px;
+    min-height: 20px;
+}
+.dnd-wrapper .droppable-container .stickNotes[placeholder]:empty:before {
+    content: attr(placeholder);
+    color: #555;
+}
+
+.dnd-wrapper .droppable-container .stickNotes[placeholder]:empty:focus:before {
+    content: "";
+}
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(128, 128, 128, .2);
+    -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+}
+
+#printHolder{
+    position: absolute;
+    width: 820px;
+    height: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    display: none;
+}
+
+.print-image{
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: auto;
+    right: 0;
+}
+
+.disabled-div {
+	opacity: 0.8;
+	pointer-events:none
+}
+.dnd-wrapper .droppable-container .stickNotes.placeholder {
+   color: #666;
+}
+
+/* for portrait screen ........... */
+
+@media screen and (max-width: 896px),
+@media screen and (orientation:portrait){
+
+    .droppable-container, .dnd-wrapper .droppable-container .sticky-notes-holder  {
+        position: relative;
+        width: 640px;
+        height: 375px;
+
+    }
+
+    .draggable-content {
+        height: 100px;
+        z-index: 1;
+        display: inline-block;
+        margin-bottom: 0px;
+        margin-right: 5px;
+    }
+
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait){
+
+    .droppable-container, .dnd-wrapper .droppable-container .sticky-notes-holder  {
+        position: relative;
+        width: 640px;
+        height: 375px;
+
+    }
+
+    .draggable-content {
+        height: 100px;
+        z-index: 1;
+        display: inline-block;
+        margin-bottom: 0px;
+        margin-right: 5px;
+    }
+
+}
+
+.iframe {
+    overflow: scroll !important;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+@media print {
+
+    #printHolder {display: block;}
+    .drag-container{
+        display: none;
+    }
+
+    .print-image{
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}

@@ -1,0 +1,35 @@
+<div class="textarea-button-container">
+	<div class="tool-container">
+		<div class="dropup tool-bar" ng-class="showFontSizes===true?'active':''">
+			<button editor-button type="button" class="icon-size icon-fonts" ng-class="showFontSizes===true?'active':''" title="Text size" aria-hidden="true" ng-click="openFontSizes()"></button>
+			<ul class="fonts-popup dropdown-menu" ng-show="showFontSizes">
+				<li class="font-container">
+					<a editor-button href="#" class="hugeFont" ng-click="getTextSize(5)" aria-hidden="true">Huge</a>
+				</li>
+				<li class="font-container">
+					<a editor-button href="#" class="largeFont" ng-click="getTextSize(4)" aria-hidden="true">Large</a>
+				</li>
+				<li class="font-container">
+					<a editor-button href="#" class="normalFont" ng-click="getTextSize(3)" aria-hidden="true">Normal</a>
+				</li>
+				<li class="font-container">
+					<a editor-button href="#" class="smallFont" ng-click="getTextSize(2)" aria-hidden="true">Small</a>
+				</li>
+			</ul>
+		</div>
+		<div class="divider"></div>
+		<div class="tool-bar" ng-class="activeBold===true?'active':''">
+			<button editor-button type="button" ng-click="bold()" tool="bold" class="icon-bold icon-fonts" ng-class="activeBold===true?'active':''" title="Bold" aria-hidden="true"></button>
+		</div>
+		<div class="tool-bar" ng-class="activeItalic===true?'active':''">
+			<button editor-button type="button" ng-click="italic()" tool="italic" class="icon-italic icon-fonts" ng-class="activeItalic===true?'active':''" title="Italic" aria-hidden="true"></button>
+		</div>
+		<div class="tool-bar" ng-class="activeUnderline===true?'active':''">
+			<button editor-button type="button" ng-click="underline()" class="icon-underline icon-fonts" ng-class="activeUnderline===true?'active':''" title="Underline" aria-hidden="true"></button>
+		</div>
+		<div class="divider"></div>
+		<div class="tool-bar" ng-class="activeUnorderList===true?'active':''">
+			<button editor-button type="button" ng-click="unOrderedList()" class="icon-bulleted icon-fonts" ng-class="activeUnorderList===true?'active':''" title="Bulleted list" aria-hidden="true"></button>
+		</div>
+	</div>
+</div>

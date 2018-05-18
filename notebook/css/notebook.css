@@ -1,0 +1,410 @@
+.notebookContainer {
+    position: fixed;
+    z-index: 999;
+    left: 0px;
+    width: 786px;
+    height: 627px;
+    background-image: url(images/notebook.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    bottom: -627px;
+    right: 0px;
+    padding: 0px;
+    margin: auto;
+    display: none;
+    opacity: 0;
+}
+
+.notebookContainer .notebookTool {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.notebookContainer .notebook-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.notebookContainer .notebook-carousel-container {
+    width: 571px;
+    height: 627px;
+    position: relative;
+    left: 122px;
+}
+
+.notebookContainer .close-notebook {
+    position: absolute;
+    right: 44px;
+    top: 19px;
+    width: 25px;
+    color: #fff;
+    height: 25px;
+    cursor: pointer;
+}
+
+.notebookContainer .close-notebook span {
+    color: #33251b;
+    font-size: 25px;
+}
+
+.notebookContainer .notebook-carousel-control {
+    position: absolute;
+    right: 0;
+    z-index: 2;
+    height: 35px;
+    background: #fcf7e8;
+    padding-top: 44px;
+    height: 88px;
+    margin-top: 8px;
+}
+
+.notebookContainer .notebook-carousel-control .carousel-page {
+    display: inline-block;
+    height: 35px;
+    position: relative;
+    float: left;
+    line-height: 35px;
+    font-family: Woodland-Demi;
+    font-size: 19px;
+}
+
+.notebookContainer .notebook-carousel-control>a {
+    right: 0;
+    background: transparent;
+    display: inline-block;
+    height: 35px;
+    position: relative;
+    font-family: Woodland ITC, Demi;
+    color: #33251b;
+    float: left;
+    padding-top: 2px;
+    opacity: 1;
+    width: 35px;
+    font-size: 25px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.notebookContainer .icon-back-one:before {
+    content: "\e902";
+}
+
+.notebookContainer .icon-next-one:before {
+    content: "\e901";
+}
+
+.notebookContainer .notebook-header-container {
+    height: 97px;
+    width: 70%;
+}
+
+.notebookContainer .notebook-header-text {
+    font-family: Woodland-Demi;
+    color: #33251b;
+    font-size: 28px;
+    top: 55px;
+    display: inline;
+    position: relative;
+}
+
+.notebookContainer .notebook-header-text-sub {
+    font-family: Woodland-Demi;
+    color: #33251b;
+    font-size: 28px;
+    top: 30px;
+    display: inline;
+    position: absolute;
+}
+
+.notebookContainer .notebook-subheader-text {
+    top: 57px;
+    display: inline;
+    font-family: Woodland-Medium;
+    color: #33251b;
+    font-size: 26px;
+    position: absolute;
+}
+
+.notebookContainer .line-divider {
+    margin: 0;
+    margin-bottom: 10px;
+    border-color: #7c7a75;
+    opacity: 0.2;
+}
+
+.notebookContainer .notebook-page-container {
+    height: 398px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.notebookContainer .notebook-page-container.border-bottom {
+    border-bottom: 1px solid rgba(124, 122, 117, 0.5);
+}
+
+.notebookContainer div[contenteditable] {
+    font-size: 16px;
+    height: 398px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    word-break: break-all;
+    overflow: auto;
+    padding: 0px 15px;
+    background-color: #ffffff;
+    z-index: 1;
+    -webkit-user-select: text !important;
+    -khtml-user-select: text !important;
+    -moz-user-select: -moz-text !important;
+    -o-user-select: text !important;
+    user-select: text !important;
+    -ms-user-select: text !important;
+    font-family: "Woodland-Medium";
+}
+
+.notebookContainer div[contenteditable] * {
+    -webkit-user-select: text !important;
+    -khtml-user-select: text !important;
+    -moz-user-select: -moz-text !important;
+    -o-user-select: text !important;
+    user-select: text !important;
+    -ms-user-select: text !important;
+}
+
+.notebookContainer div[contenteditable]:not(:focus):empty:before {
+    content: attr(placeholder);
+    display: block;
+    font-size: 25px;
+    font-family: "Woodland-Medium";
+    cursor: text;
+}
+
+.notebookContainer div[contenteditable].placeholder {
+    font-size: 25px;
+    font-family: "Woodland-Medium";
+    cursor: text;
+}
+
+.notebookContainer .tool-container {
+    height: 35px;
+    position: relative;
+}
+
+.notebookContainer .tool-bar {
+    background: none;
+    border: none;
+    width: 35px;
+    height: 35px;
+    float: left;
+    position: relative;
+    margin: 0;
+    text-align: center;
+}
+
+.notebookContainer .tool-bar>a {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    border: none;
+    background: transparent;
+}
+
+.notebookContainer .tool-bar>a:hover {
+    background-color: transparent;
+}
+
+.notebookContainer .tool-bar>a:focus {
+    outline: none;
+    background-color: transparent;
+}
+
+.notebookContainer .tool-bar .icon-fonts {
+    font-size: 25px!important;
+    cursor: pointer;
+    background: none;
+    border: 0;
+    padding: 0;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    color: rgb(51, 51, 51);
+}
+
+.notebookContainer .tool-bar .icon-fonts.active {
+    color: #FFFFFF;
+    background-color: #33251B;
+}
+
+.notebookContainer .fonts-popup {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    width: 108px;
+    min-width: 108px;
+    height: 180px;
+    position: absolute;
+    border: none;
+    top: -190px;
+    left: -36px;
+    background: #fff;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    font-family: "Arial, Helvetica", sans-serif;
+    color: rgba(0, 0, 0, 1);
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    -webkit-box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.3);
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    display: block;
+}
+
+.notebookContainer .fonts-popup::before {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    content: "";
+    top: 166px;
+    right: 0;
+    margin: 0 43px;
+    border: none;
+    -webkit-border-radius: 0 0 5px;
+    border-radius: 0 0 5px;
+    font-family: "Times New Roman";
+    color: rgba(0, 0, 0, 0.9);
+    -o-overflow: clip;
+    text-overflow: clip;
+    background: rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.3);
+    text-shadow: none;
+    -webkit-transform: rotateZ(45.26366581533504deg);
+    transform: rotateZ(45.26366581533504deg);
+}
+
+.notebookContainer .font-container {
+    width: 108px;
+    height: 45px;
+    border-bottom: 1px solid #ccc;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.notebookContainer .font-container:hover {
+    background-color: #f5f5f5;
+}
+
+.notebookContainer .font-container:first-child {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.notebookContainer .font-container:last-child {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.notebookContainer .font-container>a {
+    cursor: pointer;
+    position: relative;
+    font-family: "AvenirRoman";
+    color: #58595b;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    height: 45px;
+    line-height: 45px;
+}
+
+.notebookContainer .font-container>a:hover {
+    background-color: transparent;
+}
+
+.notebookContainer .hugeFont {
+    font-size: 30px;
+}
+
+.notebookContainer .largeFont {
+    font-size: 23px;
+}
+
+.notebookContainer .normalFont {
+    font-size: 19px;
+}
+
+.notebookContainer .smallFont {
+    font-size: 12px;
+}
+
+.notebookContainer .font-container a {
+    text-decoration: none;
+}
+
+.notebookContainer .font-container a:hover {
+    color: #58595b;
+}
+
+.notebookContainer .action-icons {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+.notebookContainer .action-icons .tool-bar:hover {
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    background-color: #33251b;
+}
+
+.notebookContainer .action-icons .tool-bar:hover span {
+    color: #FFFFFF;
+}
+
+.notebookContainer .action-icons .tool-bar:not(:first-child) {
+    margin-left: 5px;
+}
+
+.notebookContainer .action-icons a {
+    margin-left: 15px;
+}
+
+.notebookContainer .notebook-page-page .mce-edit-area {
+    border-width: 0!important;
+}
+
+.notebookContainer .notebook-page-page iframe {
+    height: 393px!important;
+}
+
+.notebookContainer .notebook-image-page {
+    background-color: white;
+}
+
+.notebookContainer .notebook-image-page .image-container {
+    height: 296px;
+    background-size: 571px 296px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.notebookContainer .notebook-image-page .text-container div[contenteditable] {
+    height: 102px;
+}
+
+.notebook-print-container span {
+    white-space: pre-wrap;
+}

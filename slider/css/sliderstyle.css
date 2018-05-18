@@ -1,0 +1,18 @@
+/* Write your CSS */
+
+input[type=range].horizontal {
+    width: 100%;
+}
+
+input[type=range].vertical {
+    width: 20px;
+    height: 200px;
+    -webkit-appearance: slider-vertical;
+    -moz--appearance: slider-vertical;
+    writing-mode: bt-lr;
+}
+
+input[type=range].horizontalPosition {
+    margin: 0;
+    padding: 0;
+}

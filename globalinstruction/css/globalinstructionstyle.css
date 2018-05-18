@@ -1,0 +1,663 @@
+/* Write your CSS */
+
+.informationPopup {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    /*min-height: 670px;
+    min-width: 1024px;*/
+    background-color: rgba(0,0,0,0.6);
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+    padding: 0px;
+    text-align: center;
+    z-index: 999;
+    font-family: Woodland-Medium;
+
+}
+
+.informationPopup-effect{
+    opacity: 1;
+    transform: scaleX(1) scaleY(1) scaleZ(1);
+    display: block;
+    transform-style: preserve-3d;
+    transition: opacity 200ms, transform 200ms;
+}
+
+.notebook-ins{
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    transition: none;
+    pointer-events: none;
+    background: rgba(0,0,0,1);
+    border: 2px dashed;
+}
+
+.next-button-ins{
+    top: 0px;
+}
+
+.next-button-ins2{
+    background: rgba(0,0,0,0.2);
+}
+
+.nav-bar-container-ins{
+    top: 83px;
+}
+.informationPopup .virtualLabMainContainer .lab-view-container .lab-view .screen-view .instruction-topic .start-btn{
+    position: relative;
+    margin-top: 14px;
+    width: 174px;
+    font-family: AvenirHeavy;
+    font-size: 23px;
+    /*padding-top: 4px;*/
+	padding:5px 0 ! important;
+}
+
+.activity_area .notebook-ins{
+    bottom: -8px;
+    background: rgba(0,0,0,0.2);
+}
+
+.info-ins{
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    transition: none;
+    pointer-events: none;
+    background: rgba(0,0,0,1);
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+}
+
+.virtualLabMainContainer-ins{
+    padding-top: 50px;
+}
+
+.nav-bar-container .nav-ins{
+    position: relative;
+    top: -37px;
+    background: rgba(0,0,0,1);
+    border: 2px dashed #FFF;
+    color: #FFF;
+    font-size: 18px;
+    font-family: Woodland-Medium;
+    padding: 1px 0px 1px 0px;
+    box-sizing: content-box;
+    line-height: 29px;
+}
+
+.virtualLabMainContainer-ins .nav-ins_2{
+    background-color: #F4742D;
+    width: 390px;
+    height: 26px;
+    top: 73px;
+    border-style: none;
+    border-radius: 5px;
+    line-height: 25px;
+}
+
+.instruction-topic{
+    color: #FFFFFF;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    margin: auto;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    font-size: 36px;
+    font-family: Woodland-Medium;
+    padding-top: 42px;
+    line-height: 27px;
+}
+
+.instruction-topic_2{
+    background-color: #2992d3;
+    height: 84px;
+    padding-top: 10px;
+    border-radius: 10px;
+    width: 408px;
+    font-size: 28px;
+    font-family: Woodland-Demi;
+}
+
+.drawing-tool-ins{
+    background: rgba(0,0,0,0);
+    border: 2px dashed #FFFFFF;
+    overflow: visible;
+}
+
+.drawing-tool-ins_2{
+    position: absolute;
+    margin: auto;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    overflow: visible;
+}
+
+.divider-ins{
+    border-bottom: 2px dashed #FFFFFF;
+}
+
+.tool-box-ins{
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    transition: none;
+    pointer-events: none;
+    background: rgba(0,0,0,1) !important;
+    color: #FFFFFF !important;
+
+}
+
+.drawing-tool-panel-ins{
+    position: absolute;
+    margin: auto;
+    top: -102px;
+    -webkit-transform: translateY(-30%);
+    -ms-transform: translateY(-30%);
+    transform: translateY(-30%);
+    /*border: 1px solid #fff;*/
+    width: 250px;
+    height: 200px;
+    left: 68px;
+    color: #FFFFFF;
+}
+
+.drawing-tool-panel-ins2{
+    background-color: #F4742D;
+    height: 220px;
+    width: 194px;
+    border-radius: 5px;
+}
+
+.drawing-tool-row-ins{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    margin: 6px 0 6px 0;
+}
+
+.drawing-tool-row-ins2{
+    margin: 3px 0 3px 0;
+}
+
+.pencil-ins{
+    width: 60px;
+    height: 60px;
+    font-size: 50px;
+    color: #FFFFFF;
+    border: 1px solid #fff;
+    float: left;
+}
+.pencil-ins2{
+    border-style: none;
+}
+
+.drawing-tool-info-ins{
+    width: 144px;
+    height: 60px;
+    font-size: 18px;
+    color: #FFF;
+    /* float: left; */
+    padding-left: 12px;
+    padding-top: 0px;
+    text-align: left;
+    line-height: 20px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.drawing-tool-info-ins2{
+    width: 128px;
+    font-size: 16px;
+    padding-left: 1px;
+}
+
+.eraser-ins{
+    padding-top: 13px;
+}
+
+.tool-arrow-top{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    color: #FFFFFF;
+    margin: auto;
+    font-size: 36px;
+    top: -34%;
+    left: -5px;
+}
+
+.tool-arrow-top_2{
+    font-size: 37px;
+    top: -41px;
+    left: 26px;
+}
+
+.tool-arrow-bottom{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    color: #FFFFFF;
+    margin: auto;
+    font-size: 35px;
+    top: 98%;
+    left: -3px;
+}
+
+.tool-arrow-bottom_2{
+    font-size: 36px;
+    left: 27px;
+}
+.snapshoot-ins{
+    position: absolute;
+    width: 196px;
+    height: 100px;
+    color: #FFF;
+    text-align: left;
+    left: 70px;
+    top: 121px;
+}
+.snapshoot-ins2{
+    background-color: #F4742D;
+    border-radius: 5px;
+    width: 136px;
+    height: 108px;
+    font-size: 16px;
+    padding: 2px 0px 2px 6px;
+    line-height: 20px;
+        top: 52px;
+}
+
+.tool-arrow-1{
+    width: 100px;
+    height: 100px;
+    color: #FFFFFF;
+    margin: auto;
+    font-size: 35px;
+    right: 160px;
+    bottom: 50px;
+    -webkit-transform: rotateY(180deg) rotateX(180deg) rotateZ(40deg);
+    transform: rotateY(180deg) rotateX(180deg) rotateZ(40deg);
+}
+
+.tool-arrow-1_2{
+    font-size: 22px;
+    bottom: -61px;
+}
+.tool-arrow-txt1{
+    width: 400px;
+    height: 100px;
+    color: #FFFFFF;
+    margin: auto;
+    right: 190px;
+    bottom: -75px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.tool-arrow-txt1_1{
+    right: 175px;
+}
+
+.tool-arrow-txt1_2{
+    background-color: #F4742D;
+    height: 28px;
+    bottom: 41px;
+    left: 0px;
+    width: auto;
+    max-width: 400px;
+}
+
+.tool-arrow-2{
+    position: absolute;
+    width: 100px;
+    right: 263px;
+    top: 23px;
+    font-size: 20px;
+    color: #FFF;
+    margin: auto;
+}
+.tool-arrow-2_2{
+    font-size: 14px;
+    right: 162px;
+    top: 22px;
+}
+
+.tool-arrow-txt2{
+    position: absolute;
+    color: #FFF;
+    font-size: 18px;
+    /*left: -149px;
+    text-align: left;*/
+    top: -6px;
+	/*border:1px solid #fff;*/
+	width:190px;
+	text-align:right;
+	right:75px;
+}
+
+.tool-arrow-txt2_2{
+    background-color: #F4742D;
+    height: 50px;
+    border-radius: 5px;
+    padding-top: 3px;
+    left: -193px;
+    padding-left: 7px;
+}
+
+.tool-arrow-3{
+    position: absolute;
+    width: 100px;
+    right: 21px;
+    top: 37px;
+    font-size: 41px;
+    color: #fff;
+    margin: auto;
+    z-index: 10;
+}
+
+.tool-arrow-3_icon{
+    /*transform: rotateY(180deg);*/
+    font-size: 150px;
+}
+
+.tool-arrow-3_2{
+    font-size: 37px;
+    right: 10px;
+    top: 40px;
+}
+
+.tool-arrow-txt3{
+   position: absolute;
+    width: 205px;
+    top: 141px;
+    font-size: 18px;
+    left: -258px;
+    text-align: left;
+}
+
+
+.tool-arrow-3-save{
+    position: absolute;
+    width: 100px;
+    right: 54px;
+    top: 37px;
+    font-size: 41px;
+    color: #fff;
+    margin: auto;
+    z-index: 10;
+}
+
+.tool-arrow-3_icon-save{
+    /*transform: rotateY(180deg);*/
+    font-size: 108px;
+}
+
+.tool-arrow-3_2-save{
+    font-size: 37px;
+    right: 10px;
+    top: 40px;
+}
+
+.tool-arrow-txt3-save{
+   position: absolute;
+    width: 290px;
+    top: 95px;
+    font-size: 18px;
+    left: -258px;
+    text-align: left;
+}
+
+.tool-arrow-txt3_2{
+    background-color: #F4742D;
+    border-radius: 5px;
+    padding-top: 3px;
+    width: 108px;
+    height: 95px;
+    padding-left: 6px;
+    font-family: Woodland-Medium;
+    left: -164px;
+}
+
+.close-ins {
+    position: absolute;
+    top: 129px;
+    right: 0;
+    width: 57px;
+    height: 46px;
+    border: none;
+    -webkit-border-radius: 5px 0 0 5px;
+    border-radius: 5px 0 0 5px;
+    color: #FFFFFF;
+    background: #426ab2;
+    font-size: 30px;
+    padding-top: 7px;
+    text-align: left;
+    padding-left: 8px;
+    cursor: pointer;
+}
+.close-ins:hover,.close-ins:active {
+    background: #FFFFFF;
+    color: #426ab2;
+}
+
+.close-ins_2 {
+    position: absolute;
+    top: 129px;
+    right: 20px;
+    font-size: 30px;
+    color: #ffff33;
+    cursor: pointer;
+}
+
+.close-ins_2:hover{
+    opacity: 0.6;
+}
+
+.nav-arrow{
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 128px;
+    color: #FFFFFF;
+    font-size: 22px;
+}
+
+.drawing-tool-info-ins2_2{
+    padding-top: 10px;
+}
+
+.drawing-tool-ins .tool-box-ins .icon-drawtool-ins{
+    margin-left: -24px;
+}
+
+.save-icon-ins{
+    position: absolute;
+    right: 56px;
+    top: 10px;
+    font-size: 17px;
+    padding-left: .3em;
+    padding-top: .02em;
+}
+
+.informationPopup .informationPopupCarousal-controls {
+    position: absolute;
+    width: 100%;
+    height: 35px;
+    bottom: 7px;
+}
+
+.informationPopup .informationPopupCarousal-controls>div {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.informationPopup .informationPopupCarousal-controls>div>a {
+    display: inline-block;
+    font-size: 36px;
+    text-shadow: none;
+    opacity: 1;
+    width: 30px;
+    position: relative;
+    margin: 0px auto;
+    line-height: 35px;
+    height: 35px;
+    top: 3px;
+    color: #ffffff;
+}
+
+.informationPopup .carousel-indicators {
+    left: 0;
+    position: relative;
+    width: 95px;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 auto;
+    top: -3px;
+}
+
+.informationPopup .carousel-indicators li {
+    width: 30px!important;
+    height: 35px;
+    position: relative;
+    border: none;
+    display: inline;
+    margin: 2px!important;
+    color: #ffffff;
+    padding: 5.5px 7px;
+    cursor: default;
+}
+
+.informationPopup .carousel-indicators li>i {
+    display: inline;
+}
+
+.informationPopup .carousel-indicators li>i:before {
+    content: "\f10c";
+}
+
+.informationPopup .carousel-indicators .active {
+    background-color: transparent;
+    width: auto;
+    height: auto;
+}
+
+.informationPopup .carousel-indicators .active i:before {
+    content: "\f111";
+}
+
+.infocarousal {
+    bottom: -20px;
+    left: 48%;
+    top: initial;
+}
+
+.infocarousalTxt {
+    position: absolute;
+    width: 335px;
+    height: 60px;
+    margin: auto;
+    left: 54%;
+    bottom: 45px;
+    text-align: left;
+    font-family: Woodland-Medium;
+}
+
+@media (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .drawing-tool-ins .tool-box-ins .icon-drawtool-ins{
+        margin-left: 0px;
+    }
+
+    .tool-arrow-txt2{
+        /*left: -212px;*/
+    }
+    .tool-arrow-txt3{
+        left: -300px;
+    }
+	.tool-arrow-txt1{
+		right:122px;
+	}
+    
+    .tool-arrow-txt3-save{
+        left: -319px;
+    }
+}
+
+/*Landscape*/
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+    .infocarousalTxt {
+        left: 56%;
+    }
+}
+
+
+/* portrait */
+@media screen and (orientation:portrait) {
+	/* portrait-specific styles */
+    .informationPopup{
+        min-height: 970px;
+        min-width: 768px;
+    }
+    .nav-ins_2{
+        left: -12px;
+    }
+    .instruction-topic{
+        padding-top: 44px;
+    }
+
+    .instruction-topic_2{
+        height: 155px;
+        width: 200px;
+        left: 32px;
+
+    }
+
+    .tool-arrow-txt1 {
+        right: 190px;
+        bottom: -75px;
+    }
+
+    .tool-arrow-1 {
+        right: 160px;
+        bottom: 50px;
+        -webkit-transform: rotateY(180deg) rotateX(180deg) rotateZ(40deg);
+        transform: rotateY(180deg) rotateX(180deg) rotateZ(40deg);
+    }
+
+    .infocarousalTxt {
+        right: -65px;
+        bottom: 45px;
+        left: initial;
+    }
+
+}
+
+@media only screen and (min-device-width: 800px) and (max-device-width: 1280px) and (orientation: portrait){
+    .instruction-topic{
+        padding-top: 172px;
+    }
+    /*.infocarousalTxt {
+        right: -65px;
+        left: initial;
+    }*/
+}

@@ -1,0 +1,197 @@
+/* Write your CSS */
+
+.dnd-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.dnd-wrapper .drag-container {
+    position: absolute;
+    left: 100px;
+    top: 100px;
+}
+
+.dnd-wrapper .drag-container .drag-panel {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.dnd-wrapper .drag-container .drag-panel .draggable0 {
+    position: absolute;
+    left: 10px;
+    top: 200px;
+    width: 150px;
+    height: 50px;
+    border: 2px solid blue;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.dnd-wrapper .drag-container .drag-panel .draggable1 {
+    position: absolute;
+    left: 170px;
+    top: 200px;
+    width: 150px;
+    height: 50px;
+    border: 2px solid blue;
+}
+
+.dnd-wrapper .drag-container .drag-panel .draggable2 {
+    position: absolute;
+    left: 330px;
+    top: 200px;
+    width: 150px;
+    height: 50px;
+    border: 2px solid blue;
+}
+
+.dnd-wrapper .drag-container .drop-panel {
+    position: absolute;
+    left: 0px;
+}
+
+.dnd-wrapper .drag-container .drop-panel .droppable0 {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 250px;
+    height: 150px;
+    border: 2px solid blue;
+}
+
+.dnd-wrapper .drag-container .drop-panel .droppable1 {
+    position: absolute;
+    left: 300px;
+    top: 10px;
+    width: 250px;
+    height: 150px;
+    border: 2px solid blue;
+}
+
+.dnd-wrapper .drag-container .drop-panel .droppable2 {
+    position: absolute;
+    left: 580px;
+    top: 10px;
+    width: 250px;
+    height: 150px;
+    border: 2px solid blue;
+}
+/**** DnD style start from here***/
+.dndParentContainer {
+    position: relative;
+    width: 880px;
+    height: 370px;
+    border: 1px solid;
+}
+
+.dndParentContainer #droppable0 {
+    position: absolute;
+    width: 100px;
+    height: 200px;
+    left: 10px;
+    top: 10px;
+    border: 1px solid;
+}
+.dndParentContainer #droppable1 {
+    position: absolute;
+    width: 100px;
+    height: 200px;
+    left: 120px;
+    top: 10px;
+    border: 1px solid;
+}
+.dndParentContainer #droppable2 {
+    position: absolute;
+    width: 100px;
+    height: 200px;
+    left: 230px;
+    top: 10px;
+    border: 1px solid;
+}
+.dndParentContainer #droppable3 {
+    position: absolute;
+    width: 100px;
+    height: 200px;
+    left: 340px;
+    top: 10px;
+    border: 1px solid;
+}
+.dndParentContainer #droppable4 {
+    position: absolute;
+    width: 100px;
+    height: 200px;
+    left: 450px;
+    top: 10px;
+    border: 1px solid;
+}
+.dndParentContainer #droppable5 {
+    position: absolute;
+    width: 100px;
+    height: 200px;
+    left: 560px;
+    top: 10px;
+    border: 1px solid;
+}
+.dndParentContainer #draggable0{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 1px solid;
+    top: 250px;
+    left: 10px;
+}
+.dndParentContainer #draggable1{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 1px solid;
+    top: 250px;
+    left: 120px;
+}
+.dndParentContainer #draggable2{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 1px solid;
+    top: 250px;
+    left: 230px;
+}
+.dndParentContainer #draggable3{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 1px solid;
+    top: 250px;
+    left: 340px;
+}
+.dndParentContainer #draggable4{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 1px solid;
+    top: 250px;
+    left: 450px;
+}
+.dndParentContainer #draggable5{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 1px solid;
+    top: 250px;
+    left: 560px;
+}

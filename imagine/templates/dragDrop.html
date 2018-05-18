@@ -1,0 +1,47 @@
+<!--
+<div class="dnd-wrapper">
+
+     <div class="drag-container" ng-class="dragDisableClass">
+         <div class="drag-panel">
+            <div ng-repeat="dragItem in dragList" class="draggable-content"> <img src="{{dragItem.imgSrc}}" width="{{dragItem.w}}" height="{{dragItem.h}}" class="draggable draggable-Item"> </div>
+         </div>
+    </div>
+
+    <div id="imagine_container" class="droppable-container imagine_container">
+-->
+<!--<div class="stickNotes" placeholder="Add notes here...." contenteditable="true" ng-show="bSticky"></div>-->
+
+<!--
+        <div class="sticky-notes-holder">
+        </div>
+    </div>
+    <div class="imagine-footer">
+        <button class="globalbutton-imagine" data-ng-click="showInstructionNotes()">What If?</button>
+        <div class="imagine-action-btn">
+            <div class="icondefault sticky" data-ng-click="showStickyNotes($event)" title="Add note"><span class="icon-add"  ng-class="{selected : bSticky}" aria-hidden="true"></span></div>
+            <div class="icondefault print"><span class="icon-print" data-ng-click="printScreen($event)" title="Print"></span></div>
+            <div class="icondefault rotate" data-ng-click="resetScreen()"><i class="fa fa-rotate-right" aria-hidden="true" title="Reset"></i></div>
+        </div>
+    </div>
+-->
+
+<!-- <div class="sticky-notes-holder">
+        <div class="stickNotes" placeholder="Add notes here...." contenteditable="true" ng-show="bSticky"></div>
+    </div>-->
+
+
+
+<!--</div>-->
+<div class="dnd-wrapper">
+	<div id="imagine_container" class="droppable-container imagine_container">
+		<!-- <div class="sticky-notes-holder">
+		</div> -->
+	</div>
+	<div class="drag-container" ng-class="dragDisableClass" aria-hidden="true">
+		<div class="drag-panel">
+			<div ng-repeat="dragItem in dragList" id="{{dragItem.id}}" class="draggable-content draggable-conten">
+				<img  src="{{dragItem.imgSrc}}" width="{{dragItem.w}}" height="{{dragItem.h}}" class="draggable draggable-Item">
+			</div>
+		</div>
+	</div>
+</div>

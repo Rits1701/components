@@ -1,0 +1,62 @@
+.drawingPadContainer {
+    height: 480px;
+    width: 100%;
+    position: absolute;
+    margin: 0 auto;
+    top: 0;
+}
+
+.canvasContainerLandscape {
+    position: absolute;
+   /* height: 500px;
+    width: 880px;*/
+    z-index: 100;
+
+}
+.canvasContainerPortrait {
+    position: absolute;
+    /*height: 730px;*/
+    width: 650px;
+ /*   border: 1px solid black;*/
+    z-index: 100;
+}
+
+.canvasStyle {
+    position: relative;
+    display: block;
+}
+
+.drawingCanvasMain {
+    position: absolute;
+    z-index: 100;
+}
+
+.canvasContainer {
+    position: relative;
+}
+
+.drawingCanvas {
+    position: relative;
+    display: block;
+}
+
+
+
+.canvasTag {
+    background-color: orange;
+    position: relative;
+}
+
+@media screen and (orientation:portrait) {
+    .canvasContainer {
+        height: 720px;
+        width: 650px;
+
+    }
+    .drawingPadContainer {
+        height: 720px;
+    }
+    .canvasTag {
+        position: fixed;
+    }
+}

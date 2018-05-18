@@ -1,0 +1,6 @@
+<div class="dnd" alignment="center">
+    <div id="dndParent" class="dndParentContainer">
+        <div ng-repeat="dropItem in state.dropItems.drop" id="{{dropItem.id}}" droppable-directive></div>
+        <div ng-repeat="dragItem in state.dragItems.drag" id="{{dragItem.id}}" class="Draggable{{$index}}" value="block1" draggable-directive>Drag {{$index}}</div>
+    </div>
+</div>

@@ -1,0 +1,378 @@
+/* Write your CSS */
+
+.conclude_page {
+    width: 100%;
+    height: 100%;
+}
+
+.conclude_page .conclude_scaleContainer {
+    display: inline-block;
+}
+
+.conclude_page .leftSection .conclude_scaleContainer img {
+    width: '';
+    height: '';
+}
+
+.conclude_page .leftSection {
+    float: left; 
+}
+
+.conclude_page .rightSection {
+    float: left;
+    padding: 10px 10px 0px 10px
+}
+.conclude_page .contentContainer {
+   overflow: auto;
+}
+
+.conclude_page .Questionblock {
+    overflow: hidden;
+}
+
+.conclude_page .Questionblock p {
+    overflow: auto;
+    max-height: 200px;
+}
+
+.conclude_page .conclude_button_area {
+    overflow: hidden;
+}
+
+.conclude_page .conclude_button_area button {
+    display: block;
+    margin: 10px 5px;
+    border: 3px solid #426ab2;
+    color: #426ab2;
+    box-shadow: none;
+    background: #fff;
+    padding: 0px 20px 0px 20px;
+    text-align: left;
+    width: auto;
+    float: left;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 30px;
+    cursor: pointer;
+    font-family: 'AvenirRoman';
+    font-size: 23px;
+    -webkit-box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, .2);
+    box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, .2);
+    line-height: 35px;
+}
+
+
+.conclude_page .conclude_button_area button:hover {
+    background-color: #426ab2;
+    color: white;
+    border: 3px solid #345796;
+}
+
+.conclude_page .conclude_button_area button.active {
+    background-color: #426ab2;
+    color: white;
+}
+
+
+.conclude_page .radiobutton {
+    width: 100%;
+    position: relative;
+    padding-left: 0px;
+    cursor: pointer;
+}
+
+.conclude_page .radiobutton:before {
+    content: " ";
+    background-color: #fafafa;
+    border: 7px solid rgba(66, 106, 178, 1);
+    border-radius: 50px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), 0 -15px 10px -12px rgba(0, 0, 0, 0.05) inset;
+    display: inline-block;
+    padding: 10px;
+    position: relative;
+}
+
+.conclude_page .radiobutton span {
+    position: absolute;
+    top: 7px;
+    left: 45px;
+}
+
+.conclude_page .radiobutton.checked:after {
+    background: none repeat scroll 0 0 rgba(66, 106, 178, 1);
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3) inset;
+    content: " ";
+    font-size: 36px;
+    height: 12px;
+    left: 11px;
+    position: absolute;
+    top: 11px;
+    width: 12px;
+}
+
+.conclude_page .radio-button-holder .regular-radio+label:active,
+.conclude_page .radio-button-holder .regular-radio:checked+label:active {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1) inset;
+}
+
+.conclude_page .conclude_instruction {
+    overflow: hidden;
+}
+
+.conclude_page div[contenteditable] {
+    height: calc(100% - 35px);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    word-break: break-all;
+    overflow: auto;
+    padding: 10px 15px;
+    line-height: 32px;
+    background-color: #ffffff;
+    -webkit-user-select: text !important;
+    -khtml-user-select: text !important;
+    -moz-user-select: -moz-text !important;
+    -o-user-select: text !important;
+    user-select: text !important;
+    -ms-user-select: text !important;
+}
+
+.conclude_page div[contenteditable] * {
+    -webkit-user-select: text !important;
+    -khtml-user-select: text !important;
+    -moz-user-select: -moz-text !important;
+    -o-user-select: text !important;
+    user-select: text !important;
+    -ms-user-select: text !important;
+}
+
+.conclude_page div[contenteditable]:not(:focus):empty:before {
+    content: attr(placeholder);
+    display: block;
+    font-size: 23px;
+    cursor: text;
+}
+
+.conclude_page .tool-bar .icon-fonts {
+    font-size: 25px!important;
+    cursor: pointer;
+    background: none;
+    border: 0;
+    outline: none;
+    padding: 0;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    color: rgb(51, 51, 51);
+}
+
+.conclude_page .tool-bar .icon-fonts.active {
+    color: white;
+    border: none;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    margin: auto;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    line-height: 27px;
+}
+
+.conclude_page .fonts-popup {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    width: 108px;
+    min-width: 108px;
+    height: 180px;
+    position: absolute;
+    border: none;
+    top: -190px;
+    left: 1px;
+    background: #fff;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    font-family: "Arial, Helvetica", sans-serif;
+    color: rgba(0, 0, 0, 1);
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    -webkit-box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.3);
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    display: block;
+}
+
+.conclude_page .fonts-popup::before {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    content: "";
+    top: 166px;
+    right: 30px;
+    margin: 0 43px;
+    border: none;
+    -webkit-border-radius: 0 0 5px;
+    border-radius: 0 0 5px;
+    font-family: "Times New Roman";
+    color: rgba(0, 0, 0, 0.9);
+    -o-overflow: clip;
+    text-overflow: clip;
+    background: rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.3);
+    text-shadow: none;
+    -webkit-transform: rotateZ(45.26366581533504deg);
+    transform: rotateZ(45.26366581533504deg);
+}
+
+.conclude_page .font-container {
+    width: 108px;
+    height: 45px;
+    border-bottom: 1px solid #ccc;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.conclude_page .font-container:hover {
+    background-color: #f5f5f5;
+}
+
+.conclude_page .font-container:first-child {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.conclude_page .font-container:last-child {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.conclude_page .font-container>a {
+    cursor: pointer;
+    position: relative;
+    font-family: "AvenirLTStd";
+    color: #58595b;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    height: 45px;
+    line-height: 45px;
+}
+
+.conclude_page .font-container>a:hover {
+    background-color: transparent;
+}
+
+.conclude_page .hugeFont {
+    font-size: 30px;
+}
+
+.conclude_page .largeFont {
+    font-size: 23px;
+}
+
+.conclude_page .normalFont {
+    font-size: 19px;
+}
+
+.conclude_page .smallFont {
+    font-size: 12px;
+}
+
+.conclude_page .font-container a {
+    text-decoration: none;
+}
+
+.conclude_page .font-container a:hover {
+    color: #58595b;
+}
+
+.conclude_page .action-icons {
+    float: right;
+    bottom: 0px;
+    position: absolute;
+    right: 0px;
+    text-align: center;
+}
+
+.conclude_page .print_container {
+    display: none;
+}
+
+.conclude_page .conclude-content {
+    width: 100%;
+    height: 100%;
+}
+
+.conclude_page [editor-container] .tool-bar:hover,
+.conclude_page .action-icons .icon-print:hover {
+    background-color: rgba(66, 106, 178, .35);
+    color: #fff;
+}
+
+.conclude_page [editor-container] .tool-bar.active {
+    background-color: rgba(66, 106, 178, .35);
+    color: #fff;
+}
+
+.conclude_page .editor-container {
+    position: relative;
+}
+
+@media print {
+    .conclude_page .print_container {
+        display: block;
+    }
+}
+
+@media screen and (orientation:portrait) {
+    .conclude_page .leftSection {
+        width: 100%;
+        height: 470px;
+        text-align: center;
+    }
+    .conclude_page .leftSection .conclude_scaleContainer {
+        display: block;
+        margin: 0 auto;
+        width: 450px;
+        height: 470px;
+    }
+    .conclude_page .leftSection .conclude_scaleContainer img {
+        width: 100%;
+        height: 100%;
+    }
+    .conclude_page .rightSection {
+        float: left;
+        padding: 0px 10px 0 10px;
+        height: 100%;
+        margin-top: 5px;
+    }
+     .conclude_page .contentContainer{
+        overflow: auto;
+     }
+    .conclude_page .editor-container {
+        height: 150px;
+    }
+    .conclude_page .fonts-popup {
+        left: -7px;
+    }
+    .conclude_page .fonts-popup::before {
+        right: 25px;
+    }
+}
+@media screen and (max-width: 896px){
+    .conclude_page .leftSection {
+        width: 100%;
+        height: 470px;
+        text-align: center;
+    }
+}

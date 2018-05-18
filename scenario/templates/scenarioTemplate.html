@@ -1,0 +1,29 @@
+<div class="screen scenerioPagecontainer" ng-controller="scenarioCtrl">
+	<drawingpad-directives canvasid="1" nav="false" id="{{compData.drawingCanvasId}}"></drawingpad-directives>
+	<div class="canvasContainerLandscape embeddedScenarioCanvas" ng-show="showCanvasContainerLadscape">
+		<canvas class="canvasStyle" id="canvas_landscape_1" height={{landscape_canvas_height}} width="{{landscape_canvas_width}}"></canvas>
+	</div>
+	<div class="canvasContainerPortrait embeddedScenarioCanvas" ng-show="showCanvasContainerPortrait">
+		<canvas class="canvasStyle canvas_portrait" id="canvas_portrait_1" height="710" width="640"></canvas>
+	</div>
+
+	<div class="scenerioPagecontainer" ng-init="scenario_init()">
+		<div class="leftDiv scenerioPageleft">
+			<div class="audioButtonContainer">
+				<audioplayer-directive data="appData.data.view1.audio" source="{{audio}}"></audioplayer-directive>
+			</div>
+			<div class="textContainer" ng-if="''!=htmlText">
+				<p ng-bind-html="htmlText"></p>
+			</div>
+			<div class="textContainer" ng-if="''==htmlText">
+				<p>{{textinfoone}}</p>
+				<br/>
+				<p>{{textinfotwo}}</p>
+			</div>
+		</div>
+		<div class="rightDiv scenerio-scale-view">
+			<div class="scenerio-imageContainer scenerio-scale-sub-view">
+			</div>
+		</div>
+	</div>
+</div>

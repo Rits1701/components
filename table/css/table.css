@@ -1,0 +1,29 @@
+.tableContainer{
+    /*position: absolute;
+    left: 10px;
+    right: 0;*/
+    margin-left: 10px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+table tr:nth-child(even) {
+    background-color: #eee;
+}
+table tr:nth-child(odd) {
+   background-color:#fff;
+}
+table th {
+    background-color: #426ab2;
+    color: white;
+}
+
+table caption{
+    text-align: center;
+}

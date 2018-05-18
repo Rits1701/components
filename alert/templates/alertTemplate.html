@@ -1,0 +1,11 @@
+<div class="alert-bg">
+    <div class="msg-box" ng-class="{false:'msg-box-valign'}[options.autoclose]" >
+        {{options.alert_msg}}
+    </div>
+
+    <div class="buttonHolder" ng-show="!options.autoclose">
+        <div class="cancel" ng-click="onHideAlert('no')" >{{options.alert_button_txt1}}</div>
+        <div class="prime-button" ng-click="onHideAlert('yes')" >{{options.alert_button_txt2}}</div>
+    </div>
+
+</div>

@@ -1,0 +1,38 @@
+<div class="conclude_page">
+    <div id="{{concludeData.comp_id}}" class="conclude-content content-ratio">
+        <div class="print_container"></div>
+        <div class="leftSection concludePage-scale-view" ng-if='concludeData.imgSource !== undefined'>
+            <div class="conclude_scaleContainer">
+                <img width="{{concludeData.natuaral_size.width}}" height="{{concludeData.natuaral_size.height}}" draggable="false" ng-src="{{concludeData.imgSource}}" class="image-holder" />
+            </div>
+        </div>
+        <div class="rightSection">
+            <div class="audioButtonContainer" ng-if='concludeData.audioSource !== undefined'>
+                <audioplayer-directive source="{{concludeData.audioSource}}"></audioplayer-directive>
+            </div>
+            <div class="contentContainer">
+                <div class="Questionblock" ng-if='concludeData.questiontxt !== undefined'>
+                    <p ng-bind-html='quesHTML'></p>
+                </div>
+                <div class="conclude_button_area" ng-if='concludeData.buttons !== undefined'>
+                    <button type="button" id="conclude_button{{$index}}" ng-repeat="button in concludeData.buttons" ng-click="concludeBtnClick()">{{button}}</button>
+                </div>
+                <div class="radio-button-holder" ng-if='concludeData.radiobuttongroup !== undefined'>
+                    <div ng-repeat="radiobutton in concludeData.radiobuttongroup" id="conclude_radio{{$index}}" class="radiobutton" ng-click="selectRadio($event)"><span>{{radiobutton}}</span></div>
+                </div>
+                <div class="conclude_instruction" ng-if='concludeData.para !== undefined'>
+                    <p ng-repeat="para in paratext" ng-bind-html='para'></p>
+                </div>
+                <div class="editor-container" editor-container ng-if="concludeData.editor !== undefined">
+                    <div ng-model="concludeData.editor" ng-change="conclude_textarea_changed(e)" strip-br="true" placeholder="{{concludeData.editorPlaceholder}}" class="editor" contenteditable editor acsTouch="true" checkdisable="editor"></div>
+                    <div editortools></div>
+                    <div class="action-icons">
+                        <div class="tool-bar">
+                            <div role="button" class="print_btn icon-print icon-fonts" ng-click="concludePrint()" title="Print"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

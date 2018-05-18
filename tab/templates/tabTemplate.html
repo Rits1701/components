@@ -1,0 +1,5 @@
+<div>
+	<ul class="nav nav-pills">
+		<li ng-repeat="tab in tabComponentData track by $index" ng-click="emitTabClickedId(tab);" id="{{tab.tabId}}" class="tab-li" ng-bind-html="tab.tabName"></li>
+	</ul>
+</div>

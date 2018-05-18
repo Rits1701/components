@@ -1,0 +1,269 @@
+/* Write your CSS */
+.column-dnd
+{
+	width: 100%;
+	height: 100%;
+}
+
+.print-container .dnd-wrapper {
+    height: 437px;
+    width: 615px;
+    position: relative;
+}
+
+.print-container .drag-container {
+    width: 100%;
+    height: 95px;
+    position: relative;
+    float: left;
+    padding-top: 5px;
+}
+
+.scaleContainerWrapper .drop-area{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 342px;
+    border-radius: 0;
+    background: #f3f3f3; 
+}
+
+.print-container .draggable-content
+{
+    height: 100%;
+    width: calc(100%/6 - 5px);
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid #ccc;
+    margin-right: 5px;
+    box-sizing: border-box;   
+}
+
+.print-container .draggable-content .draggable-Item {
+    top: 7px;
+}
+
+.print-container {
+    width:100%;
+    height: 100%;
+}
+
+.print-container .sidePanel .panel-view {
+    height: auto;
+}
+
+.print-container .sidePanel {
+    height: auto;
+}
+
+.column-dnd .sidePanel .default {
+    padding: 0px;
+}
+
+.column-dnd .sidePanel .panel-view {
+    height: 100%;
+    font-family: 'AvenirRoman';
+    font-size: 23px;
+    line-height: 28px;
+}
+
+.column-dnd .sidePanel .popup {
+    padding: 0px;
+}
+
+.column-dnd .sidePanel .popup .popup-close-holder {
+    height: 25px;
+    width: 100%;
+    position: relative;
+}
+
+.column-dnd .sidePanel .popup .popup-close-holder .popup-close-icon {
+    height: 25px;
+    width: 25px;
+    top: 0px;
+    right: 0px;
+}
+
+.column-dnd .sidePanel .popup .img-container {
+    padding: 0px 17px;
+}
+
+.column-dnd .sidePanel .popup .panel-view {
+    height: calc(100% - 25px);
+}
+
+.column-dnd .sidePanel .audioButtonContainer {
+    height: 50px;
+    width: 100%;
+    padding: 0px;
+}
+
+.column-dnd .sidePanel .mainContainer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.column-dnd .sidePanel .popup .panel-data-holder {
+    padding: 0px 17px 10px 17px;
+}
+
+.column-dnd .sidePanel .buttonContainer {
+    height: 100%;
+    width: 50px;
+    position: relative;
+    float: left;
+}
+
+.column-dnd .sidePanel .commonIcon {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+}
+
+.column-dnd .sidePanel #sidepanel_heading {
+    float: left;
+    position: relative;
+    padding-right: 0px;
+    font-weight: 700;
+    line-height: 50px;
+    height: 50px;
+}
+
+.column-dnd .sidePanel .content-container {
+    width: 100%;
+    height: calc(100% - 50px);
+}
+
+.drop-column-base {
+	float:left;
+	height:100%;
+	background-color: #fff;
+	border: 1px solid #e1e1e1;
+}
+
+.column-heading {
+	color:#000;
+	width: 100%;
+	height:50px;
+	border:1px solid #fff;
+	text-align: center;
+}
+
+.droppableDirective {
+	width:100%;
+	height:100%; 
+}
+
+@media screen and (max-width: 896px) {
+    .column-dnd {
+        padding: 5px;
+    }
+
+    .column-dnd .sidePanel{
+        position: relative;
+        width: 100%;
+        height: 133px;
+        padding-bottom: 5px;
+    }
+
+    .column-dnd .sidePanel .panel-view {
+        margin-top: 0px;
+    }
+
+    .column-dnd .panel-data-holder {
+        height: 100%;
+    }
+
+    .column-dnd .sidePanel .panel-data-holder .audioButtonContainer{
+        padding: 0px;
+    }
+
+    .column-dnd .img-container {
+        display: inline-block;
+        position: relative;
+        width: 316px;
+        height: 221px;
+        float: left;
+        margin: auto 0; 
+    }
+
+    .column-dnd .img-container img {
+        padding-left: 5px;
+    }
+
+    .column-dnd .sidePanel .popup .panel-data-holder {
+        width: calc(100% - 316px);
+        height: 221px;
+        padding: 0 5px 5px 10px;
+    }
+
+    .virtualLabMainContainer .lab-view-container .lab-view {
+        padding: 0px;
+    }
+
+}
+
+@media screen and (orientation:portrait) {
+    .column-dnd {
+        padding: 5px;
+    }
+
+    .column-dnd .sidePanel{
+        position: relative;
+        width: 100%;
+        height: 133px;
+        padding-bottom: 5px;
+    }
+
+    .column-dnd .sidePanel .panel-view {
+        margin-top: 0px;
+    }
+
+    .column-dnd .panel-data-holder {
+        height: 100%;
+    }
+
+    .column-dnd .sidePanel .panel-data-holder .audioButtonContainer{
+        padding: 0px;
+    }
+
+    .column-dnd .img-container {
+        display: inline-block;
+        position: relative;
+        width: 316px;
+        height: 221px;
+        float: left;
+        margin: auto 0; 
+    }
+
+    .column-dnd .img-container img {
+        padding-left: 5px;
+    }
+
+    .column-dnd .sidePanel .popup .panel-data-holder {
+        width: calc(100% - 316px);
+        height: 221px;
+        padding: 0 5px 5px 10px;
+    }
+
+    .virtualLabMainContainer .lab-view-container .lab-view {
+        padding: 0px;
+    }
+
+}
+
+@media 
+  (max-device-width: 1024px) 
+  and (orientation: landscape) {
+    
+    .print-container .sidePanel {
+        height: 65%
+    }
+  }

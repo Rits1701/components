@@ -1,0 +1,9 @@
+<!-- <div class="canvasContainer" id="sketchpadapp" ng-show="showCanvasContainer">
+    <canvas ng-repeat="canvas in sketchpad" id="{{canvas.id}}" ng-style="canvas.id === currentCanvas && canvasEnableTool==true ? { 'display':'block'} : { 'display': 'none' }" style="display:none;" height="500" width="850"></canvas>
+</div> -->
+
+<div class="drawingCanvasMain" ng-show="canvasFromComp && activateCanvas">
+	<div class="canvasContainer" ng-repeat = "canvas in canvasContainers" ng-show="(currentCanvasNum == $index)">
+		<canvas class="drawingCanvas" id="drawingCanvas_{{currentView}}_{{$index}}" height={{drawingCanvasHeight}} width="{{drawingCanvasWidth}}"></canvas>
+	</div>	
+</div>

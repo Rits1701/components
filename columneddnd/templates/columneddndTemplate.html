@@ -1,0 +1,20 @@
+<div class="column-dnd print-container" ng-controller="columneddndCtrl">
+    <div class="scaleContainerWrapper">
+		<div class="scaleContainer">
+			<div class="dnd-wrapper" id="dndcompDirective" dndcomp-directive>
+				<div class="drop-area-wrapper">
+					<div ng-repeat="dropColumn in appData.data.dragItems.dropColumns" class="drop-column-base {{dropColumn.class}}" id="wrapper_{{dropColumn.id}}" style="width:{{dropColumn.width}}%; margin-right:{{dropColumn.marginRight}}%;">
+						<div class="column-heading">{{dropColumn.heading}}</div>
+						<div class="droppableDirective drop-area" id="{{dropColumn.id}}" droppable-directive></div>
+					</div>
+				</div>
+
+				<div class="drag-container" ng-class="dragDisableClass">
+					<div>
+						<img  ng-repeat="dragItem in appData.data.dragItems.dragItems" id="{{dragItem.id}}" src="{{dragItem.imgSrc}}" for="{{dragItem.for}}" class="draggable draggable-Item {{dragItem.id}}" draggable-directive>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,19 @@
+<div class="tableContainer">
+    <table>
+        <caption>{{tableData.data.caption}}</caption>
+        <thead>
+            <tr>
+              <th ng-repeat="thead in tableData.data.thead" ng-bind-html="thead"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="tbody in tableData.data.tbody">
+                <td ng-repeat="row in tbody.tr">
+                    <div class="editable validate numbers-only" contenteditable={{row.editable}} type="number" ng-keypress="dataValidation($event, row)" ng-model="row.value" ng-change="updateTableData()"></div>
+                    
+                </td>
+            </tr>
+           
+        </tbody>
+    </table>
+</div>

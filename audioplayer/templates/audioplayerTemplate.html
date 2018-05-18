@@ -1,0 +1,19 @@
+<div class="mainContainer">
+	<div class="audioContainer">
+		<audio id="audioTag" class="audioTag" ng-src='{{source}}'>
+            <!--<source id="sourceId" src='{{audioSrc}}' type="audio/ogg">-->
+            <source id="sourceId" ng-src='{{source}}' type="audio/mp3">
+        </audio>
+	</div>
+	<div class="buttonContainer">
+		<div id="playbutton" title="Play" class="commonIcon" ng-if="!playingState" ng-click="playAudio()">
+			<i class="fa fa-volume-down" aria-hidden="true" ng-if="!playingState"></i>
+		</div>
+		<div id="pausebutton" title="Pause" class="commonIcon" ng-if="playingState" ng-click="pauseAudio()">
+			<i class="fa fa-pause" aria-hidden="true" ng-if="playingState"></i>
+		</div>
+		<div id="replaybutton" title="Replay" class="commonIcon" ng-if="replyState" ng-click="replayAudio()">
+			<i class="fa fa-rotate-right" ng-if="replyState"></i>
+		</div>
+	</div>
+</div>
